@@ -19,4 +19,16 @@
 
     <string name="hint_consumo">Escriba su Consumo</string>
 
+    <string name="titulo_ini">Bienvenidos a HidroTrack</string>
+
+    <string name="sp1j_title">Choose a language</string>
+
+    <string-array name="dlangs">
+        <item>Python</item>
+        <item>PHP</item>
+        <item>Perl</item>
+        <item>Tcl</item>
+        <item>Ruby</item>
+    </string-array>
+
 </resources>

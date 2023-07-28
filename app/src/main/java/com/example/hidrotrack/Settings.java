@@ -1,14 +1,16 @@
 package com.example.hidrotrack;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
+
+import java.util.ArrayList;
 
 public class Settings extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +38,15 @@ public class Settings extends AppCompatActivity {
                 startActivity(ir6a1);
             }
         });
+        //Enlazo el Spinner de la vista con el de java
+        Spinner sp1j = findViewById(R.id.sp1);
+        ArrayList Lista = new ArrayList();
+        Lista.add("Uno");
+        Lista.add("Dos");
+        Lista.add("Tres");
+        Lista.add("Cuatro");
 
-
+        ArrayAdapter adap = new ArrayAdapter(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, Lista);
+        sp1j.setAdapter(adap);
     }
 }
