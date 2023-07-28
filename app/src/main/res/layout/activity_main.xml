@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEEB"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iV1"
+        android:layout_width="133dp"
+        android:layout_height="107dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/_023_07_25_21h55_15_removebg_preview" />
+
+    <TextView
+        android:id="@+id/tV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:background="#0E90AD"
+        android:text="Bienvenidos a HidroTrack"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="#2D572C"
+        android:text="@string/consumption"
+        android:fontFamily="casual"
+        app:layout_constraintTop_toBottomOf="@+id/tV1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="#2D572C"
+        android:text="@string/tips"
+        android:fontFamily="casual"
+        app:layout_constraintTop_toBottomOf="@+id/btn12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="151sp" />
+
+    <Button
+        android:id="@+id/btn14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="#2D572C"
+        android:text="@string/progress"
+        android:fontFamily="casual"
+        app:layout_constraintTop_toBottomOf="@+id/btn13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="151sp" />
+
+    <Button
+        android:id="@+id/btn15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="#2D572C"
+        android:text="@string/info"
+        android:fontFamily="casual"
+        app:layout_constraintTop_toBottomOf="@+id/btn14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="151sp" />
+
+    <Button
+        android:id="@+id/btn16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="#2D572C"
+        android:text="@string/settings"
+        android:fontFamily="casual"
+        app:layout_constraintTop_toBottomOf="@+id/btn15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
