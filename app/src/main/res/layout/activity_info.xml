@@ -11,35 +11,38 @@
         android:id="@+id/iV5"
         android:layout_width="133dp"
         android:layout_height="107dp"
+        android:contentDescription="@string/hidro_logo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/_023_07_25_21h55_15_removebg_preview" />
+        app:srcCompat="@drawable/_hidrotrack_logo" />
 
     <TextView
         android:id="@+id/tV5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100sp"
-        android:background="#0E90AD"
-        android:text="Información sobre la conservación del agua"
+        android:background="#063F4B"
+        android:text="@string/info_1"
         android:fontFamily="casual"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34sp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iV5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/tV52"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80sp"
-        android:text="Aquí va la información sobre la conservación del agua"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:text="@string/info_2"
         android:textAlignment="center"
+        android:textColor="#063F4B"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@+id/tV5"
+        app:layout_constraintTop_toBottomOf="@id/tV5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -48,11 +51,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50sp"
-        android:backgroundTint="#2D572C"
-        android:text="@string/rtrn"
+        android:backgroundTint="#063F4B"
         android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/tV52"
+        android:text="@string/rtrn"
+        app:layout_constraintTop_toBottomOf="@id/tV52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

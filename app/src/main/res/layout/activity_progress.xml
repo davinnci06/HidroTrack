@@ -11,18 +11,19 @@
         android:id="@+id/iV4"
         android:layout_width="133dp"
         android:layout_height="107dp"
+        android:contentDescription="@string/hidro_logo"
+        app:srcCompat="@drawable/_hidrotrack_logo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/_023_07_25_21h55_15_removebg_preview" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/tV4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100sp"
-        android:background="#0E90AD"
-        android:text="Seguimiento y Progreso"
+        android:background="#063F4B"
+        android:text="@string/pr_t"
         android:fontFamily="casual"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -31,26 +32,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageView
-        android:id="@+id/iV42"
-        android:layout_width="220sp"
-        android:layout_height="220sp"
-        android:layout_marginTop="50sp"
-        app:srcCompat="@drawable/_1140735_48687"
-        app:layout_constraintTop_toBottomOf="@+id/tV4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/btn41"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80sp"
-        android:backgroundTint="#2D572C"
-        android:text="@string/rtrn"
-        android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/iV42"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tV4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iV42"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:layout_marginTop="50sp"
+                android:contentDescription="@string/pr1"
+                app:srcCompat="@drawable/_infrographic" />
+
+            <Button
+                android:id="@+id/btn41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:backgroundTint="#063F4B"
+                android:fontFamily="casual"
+                android:text="@string/rtrn" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
