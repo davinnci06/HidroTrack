@@ -7,43 +7,33 @@
     android:background="#87CEEB"
     tools:context=".Progress">
 
-    <ImageView
-        android:id="@+id/iV4"
-        android:layout_width="133dp"
-        android:layout_height="107dp"
-        android:contentDescription="@string/hidro_logo"
-        app:srcCompat="@drawable/_hidrotrack_logo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/tV4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100sp"
-        android:background="#063F4B"
-        android:text="@string/pr_t"
-        android:fontFamily="casual"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="34sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tV4">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iV4"
+                android:layout_width="133dp"
+                android:layout_height="107dp"
+                android:contentDescription="@string/hidro_logo"
+                app:srcCompat="@drawable/_hidrotrack_logo" />
+
+            <TextView
+                android:id="@+id/tV4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#063F4B"
+                android:fontFamily="casual"
+                android:text="@string/pr_t"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
 
             <ImageView
                 android:id="@+id/iV42"
@@ -58,6 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50sp"
+                android:layout_marginBottom="50sp"
                 android:backgroundTint="#063F4B"
                 android:fontFamily="casual"
                 android:text="@string/rtrn" />
