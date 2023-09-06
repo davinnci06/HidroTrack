@@ -14,7 +14,9 @@
 
     <string name="tips">Consejos</string>
     <string name="tip_t">Consejos para Reducir el Consumo</string>
-    <string name="tip_c">Aquí van los Consejos para Reducir el Consumo</string>
+    <string name="tip_c">
+        Toma baños de 5 minutos: Reducir el tiempo que pasas en la ducha puede ahorrarte hasta 600 litros de agua al mes. Al tomar baños más cortos, estás contribuyendo significativamente a la conservación del agua en tu hogar.
+    </string>
 
     <string name="progress">Progreso</string>
     <string name="pr_t">Seguimiento y Progreso</string>
@@ -29,5 +31,26 @@
     <string name="sp1j_title">Elije una configuración</string>
 
     <string name="rtrn">Regresar</string>
+
+    <string name="other_b">Otra info</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragment_0">
+        \t - Energía Solar.\n
+        \t - Energía Eólica.\n
+        \t - Energía Hidráulica.\n
+        \t - Energía Geotérmica.\n
+        \t - Energía de Biomasa.\n
+        \t - Energía Mareomotriz.\n
+        \t - Energía Undimotriz.
+        </string>
+    <string name="fragment_1">
+        \t 1. China.\n
+        \t 2. Alemania.\n
+        \t 3. Costa Rica.\n
+        \t 4. Islandia.\n
+        \t 5. Noruega.\n
+        \t 6. Dinamarca.
+    </string>
 
 </resources>

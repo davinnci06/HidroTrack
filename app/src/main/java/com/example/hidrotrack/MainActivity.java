@@ -39,11 +39,15 @@ public class MainActivity extends AppCompatActivity {
         Button btn15j = findViewById(R.id.btn15);
         Button btn16j = findViewById(R.id.btn16);
 
+        Button btn17j = findViewById(R.id.btn17);
+
         //Se aplica la animación a cada boton
         btn13j.startAnimation(animj);
         btn14j.startAnimation(animj);
         btn15j.startAnimation(animj);
         btn16j.startAnimation(animj);
+
+        btn17j.startAnimation(animj);
 
         //Voy a crear todos los redireccionamientos
         //Ir desde inicio a consejos
@@ -65,6 +69,11 @@ public class MainActivity extends AppCompatActivity {
         btn16j.setOnClickListener(v -> {
             Intent ir1a6 = new Intent(MainActivity.this, Settings.class);
             startActivity(ir1a6);
+        });
+        //Ir desde inicio al tablayout
+        btn17j.setOnClickListener(v -> {
+            Intent ir1a7 = new Intent(MainActivity.this, Other.class);
+            startActivity(ir1a7);
         });
 
         Log.d(TAG, "Mensaje de depuración"); // Mensaje de depuración

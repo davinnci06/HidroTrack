@@ -35,22 +35,61 @@
                 android:textColor="@color/white"
                 android:textSize="34sp" />
 
-            <ImageView
-                android:id="@+id/iV42"
-                android:layout_width="200sp"
-                android:layout_height="200sp"
-                android:layout_marginTop="50sp"
-                android:contentDescription="@string/pr1"
-                app:srcCompat="@drawable/_infrographic" />
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    app:columnCount="2"
+                    app:rowCount="2">
+
+                    <ImageView
+                        android:id="@+id/iV421"
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:layout_margin="10sp"
+                        android:contentDescription="@string/pr1"
+                        app:srcCompat="@drawable/triangle" />
+
+                    <ImageView
+                        android:id="@+id/iV422"
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:layout_margin="10sp"
+                        android:contentDescription="@string/pr1"
+                        app:srcCompat="@drawable/_infrographic" />
+
+                    <ImageView
+                        android:id="@+id/iV423"
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:layout_margin="10sp"
+                        android:contentDescription="@string/pr1"
+                        app:srcCompat="@drawable/tendence" />
+
+                    <ImageView
+                        android:id="@+id/iV424"
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:layout_margin="10sp"
+                        android:contentDescription="@string/pr1"
+                        app:srcCompat="@drawable/graphics" />
+                </androidx.gridlayout.widget.GridLayout>
+            </HorizontalScrollView>
 
             <Button
                 android:id="@+id/btn41"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50sp"
+                android:layout_marginTop="30sp"
                 android:layout_marginBottom="50sp"
                 android:backgroundTint="#063F4B"
                 android:fontFamily="casual"
+                android:textColor="@color/white"
                 android:text="@string/rtrn" />
 
         </LinearLayout>

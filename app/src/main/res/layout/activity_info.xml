@@ -35,26 +35,34 @@
                 android:textColor="@color/white"
                 android:textSize="34sp" />
 
-            <TextView
-                android:id="@+id/tV52"
-                android:layout_width="match_parent"
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20sp"
-                android:layout_marginTop="20sp"
-                android:layout_marginEnd="20sp"
-                android:text="@string/info_2"
-                android:textAlignment="center"
-                android:textColor="#063F4B"
-                android:textSize="22sp" />
+                app:cardCornerRadius="50sp"
+                app:cardBackgroundColor="#063F4B"
+                app:cardElevation="50sp"
+                android:layout_margin="20sp">
+
+                <TextView
+                    android:id="@+id/tV52"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_2"
+                    android:padding="20sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+            </androidx.cardview.widget.CardView>
 
             <Button
                 android:id="@+id/btn51"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50sp"
+                android:layout_marginTop="30sp"
                 android:layout_marginBottom="50sp"
                 android:backgroundTint="#063F4B"
                 android:fontFamily="casual"
+                android:textColor="@color/white"
                 android:text="@string/rtrn" />
         </LinearLayout>
     </ScrollView>

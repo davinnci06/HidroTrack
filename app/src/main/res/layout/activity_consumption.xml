@@ -54,6 +54,7 @@
                 android:layout_marginTop="50sp"
                 android:backgroundTint="#063F4B"
                 android:fontFamily="casual"
+                android:textColor="@color/white"
                 android:text="@string/guardar" />
 
             <Button
@@ -64,6 +65,7 @@
                 android:layout_marginBottom="50sp"
                 android:backgroundTint="#063F4B"
                 android:fontFamily="casual"
+                android:textColor="@color/white"
                 android:text="@string/rtrn" />
         </LinearLayout>
     </ScrollView>

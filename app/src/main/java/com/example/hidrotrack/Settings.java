@@ -40,10 +40,10 @@ public class Settings extends AppCompatActivity {
         //Creo una lista para mostrar las opciones a elegir
         ArrayList<String> Opcion = new ArrayList<>();
         //Agrego los elementos a mostrar en mi lista
-        Opcion.add("Uno");
-        Opcion.add("Dos");
-        Opcion.add("Tres");
-        Opcion.add("Cuatro");
+        Opcion.add("Grupo 02");
+        Opcion.add("Grupo 14");
+        Opcion.add("Grupo 17");
+        Opcion.add("Grupo 19");
 
         //Creo un adaptador para que la lista se muestra en modo menu desplegable
         ArrayAdapter<String> adap = new ArrayAdapter<>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, Opcion);
