@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#87CEEB"
-    tools:context=".Tips">
+    tools:context=".Other">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -18,53 +19,68 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/iV3"
+                android:id="@+id/iV7"
                 android:layout_width="133dp"
                 android:layout_height="107dp"
                 android:contentDescription="@string/hidro_logo"
                 app:srcCompat="@drawable/_hidrotrack_logo" />
 
             <TextView
-                android:id="@+id/tV3"
+                android:id="@+id/tv7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#063F4B"
                 android:fontFamily="casual"
-                android:text="@string/tip_t"
+                android:text="@string/other_b"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="34sp" />
 
-            <androidx.cardview.widget.CardView
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tl7"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:cardCornerRadius="50sp"
-                app:cardBackgroundColor="#063F4B"
-                app:cardElevation="50sp"
-                android:layout_margin="20sp">
+                android:layout_height="wrap_content"
+                android:background="#063F4B"
+                app:tabIconTint="@color/white"
+                app:tabIndicatorColor="@color/white"
+                app:tabSelectedTextColor="@color/white">
 
-                <TextView
-                    android:id="@+id/tV32"
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/it71"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="20sp"
-                    android:text="@string/tip_c"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="22sp" />
-            </androidx.cardview.widget.CardView>
+                    android:icon="@drawable/energy7"
+                    android:text="Otras Energías" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/it72"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/flag7"
+                    android:text="Paises líderes" />
+
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp7"
+                android:padding="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
             <Button
-                android:id="@+id/btn31"
+                android:id="@+id/btn71"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30sp"
-                android:layout_marginBottom="50sp"
+                android:layout_marginBottom="30sp"
                 android:backgroundTint="#063F4B"
                 android:fontFamily="casual"
                 android:textColor="@color/white"
                 android:text="@string/rtrn" />
+
         </LinearLayout>
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

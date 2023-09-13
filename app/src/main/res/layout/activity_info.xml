@@ -7,52 +7,64 @@
     android:background="#87CEEB"
     tools:context=".Info">
 
-    <ImageView
-        android:id="@+id/iV5"
-        android:layout_width="133dp"
-        android:layout_height="107dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/_023_07_25_21h55_15_removebg_preview" />
-
-    <TextView
-        android:id="@+id/tV5"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100sp"
-        android:background="#0E90AD"
-        android:text="Información sobre la conservación del agua"
-        android:fontFamily="casual"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="34sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/tV52"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80sp"
-        android:text="Aquí va la información sobre la conservación del agua"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@+id/tV5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn51"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50sp"
-        android:backgroundTint="#2D572C"
-        android:text="@string/rtrn"
-        android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/tV52"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <ImageView
+                android:id="@+id/iV5"
+                android:layout_width="133dp"
+                android:layout_height="107dp"
+                android:contentDescription="@string/hidro_logo"
+                app:srcCompat="@drawable/_hidrotrack_logo" />
+
+            <TextView
+                android:id="@+id/tV5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#063F4B"
+                android:fontFamily="casual"
+                android:text="@string/info_1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="50sp"
+                app:cardBackgroundColor="#063F4B"
+                app:cardElevation="50sp"
+                android:layout_margin="20sp">
+
+                <TextView
+                    android:id="@+id/tV52"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_2"
+                    android:padding="20sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginBottom="50sp"
+                android:backgroundTint="#063F4B"
+                android:fontFamily="casual"
+                android:textColor="@color/white"
+                android:text="@string/rtrn" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.HidroTrack"
         tools:targetApi="31">
         <activity
+            android:name=".Other"
+            android:exported="false" />
+        <activity
             android:name=".Settings"
             android:exported="false" />
         <activity
@@ -26,7 +29,17 @@
             android:exported="false" />
         <activity
             android:name=".Consumption"
-            android:exported="false" />
+            android:exported="false" /> <!-- Comandos para agregar el splash de inicio -->
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

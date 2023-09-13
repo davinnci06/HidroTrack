@@ -7,88 +7,95 @@
     android:background="#87CEEB"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/iV1"
-        android:layout_width="133dp"
-        android:layout_height="107dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/_023_07_25_21h55_15_removebg_preview" />
-
-    <TextView
-        android:id="@+id/tV1"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100sp"
-        android:background="#0E90AD"
-        android:text="@string/titulo_ini"
-        android:fontFamily="casual"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="34sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50sp"
-        android:backgroundTint="#2D572C"
-        android:text="@string/consumption"
-        android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/tV1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50sp"
-        android:backgroundTint="#2D572C"
-        android:text="@string/tips"
-        android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/btn12"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <ImageView
+                android:id="@+id/iV1"
+                android:layout_width="133dp"
+                android:layout_height="107dp"
+                android:contentDescription="@string/hidro_logo"
+                app:srcCompat="@drawable/_hidrotrack_logo" />
 
-    <Button
-        android:id="@+id/btn14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50sp"
-        android:backgroundTint="#2D572C"
-        android:text="@string/progress"
-        android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/btn13"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <TextView
+                android:id="@+id/tV1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#063F4B"
+                android:fontFamily="casual"
+                android:text="@string/titulo_ini"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
 
-    <Button
-        android:id="@+id/btn15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50sp"
-        android:backgroundTint="#2D572C"
-        android:text="@string/info"
-        android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/btn14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <Button
+                android:id="@+id/btn12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:backgroundTint="#063F4B"
+                android:fontFamily="casual"
+                android:textColor="@color/white"
+                android:text="@string/consumption" />
 
-    <Button
-        android:id="@+id/btn16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50sp"
-        android:backgroundTint="#2D572C"
-        android:text="@string/settings"
-        android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/btn15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <Button
+                android:id="@+id/btn13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:backgroundTint="#063F4B"
+                android:fontFamily="casual"
+                android:textColor="@color/white"
+                android:text="@string/tips" />
+
+            <Button
+                android:id="@+id/btn14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:backgroundTint="#063F4B"
+                android:fontFamily="casual"
+                android:textColor="@color/white"
+                android:text="@string/progress" />
+
+            <Button
+                android:id="@+id/btn15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:backgroundTint="#063F4B"
+                android:fontFamily="casual"
+                android:textColor="@color/white"
+                android:text="@string/info" />
+
+            <Button
+                android:id="@+id/btn17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:backgroundTint="#063F4B"
+                android:fontFamily="casual"
+                android:textColor="@color/white"
+                android:text="@string/other_b" />
+
+            <Button
+                android:id="@+id/btn16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:layout_marginBottom="50sp"
+                android:backgroundTint="#063F4B"
+                android:fontFamily="casual"
+                android:textColor="@color/white"
+                android:text="@string/settings" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

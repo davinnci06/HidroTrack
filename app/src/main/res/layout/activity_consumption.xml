@@ -7,66 +7,67 @@
     android:background="#87CEEB"
     tools:context=".Consumption">
 
-    <ImageView
-        android:id="@+id/iV2"
-        android:layout_width="133dp"
-        android:layout_height="107dp"
-        app:srcCompat="@drawable/_023_07_25_21h55_15_removebg_preview"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/tV2"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100sp"
-        android:background="#0E90AD"
-        android:fontFamily="casual"
-        android:text="@string/titulo_consumo"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent" >
 
-    <EditText
-        android:id="@+id/eT2"
-        android:layout_width="wrap_content"
-        android:layout_height="48sp"
-        android:layout_marginTop="60sp"
-        android:autofillHints="consumo"
-        android:ems="10"
-        android:hint="@string/hint_consumo"
-        android:inputType="numberDecimal"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tV2" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50sp"
-        android:backgroundTint="#2D572C"
-        android:text="Guardar"
-        android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/eT2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <ImageView
+                android:id="@+id/iV2"
+                android:layout_width="133dp"
+                android:layout_height="107dp"
+                android:contentDescription="@string/hidro_logo"
+                app:srcCompat="@drawable/_hidrotrack_logo" />
 
-    <Button
-        android:id="@+id/btn21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20sp"
-        android:backgroundTint="#2D572C"
-        android:text="@string/rtrn"
-        android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/btn23"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <TextView
+                android:id="@+id/tV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#063F4B"
+                android:fontFamily="casual"
+                android:text="@string/titulo_consumo"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <EditText
+                android:id="@+id/eT2"
+                android:layout_width="wrap_content"
+                android:layout_height="48sp"
+                android:layout_marginTop="60sp"
+                android:autofillHints="consumo"
+                android:ems="10"
+                android:hint="@string/hint_consumo"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textColorHint="#063F4B" />
+
+            <Button
+                android:id="@+id/btn23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:backgroundTint="#063F4B"
+                android:fontFamily="casual"
+                android:textColor="@color/white"
+                android:text="@string/guardar" />
+
+            <Button
+                android:id="@+id/btn21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="50sp"
+                android:backgroundTint="#063F4B"
+                android:fontFamily="casual"
+                android:textColor="@color/white"
+                android:text="@string/rtrn" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
